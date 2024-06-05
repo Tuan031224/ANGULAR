@@ -1,0 +1,33 @@
+<div class="main">
+    <div class="main1">
+        <div class="list-cate">
+            <ul class="list-group">
+                <li class="list-group-item"><a [routerLink]="['/shop']" (click)="fetchProducts()">Tất cả</a></li>
+                <li class="list-group-item"><a [routerLink]="['/shop', '1']" (click)="fetchProductsByCategory('1')">Áo khoác</a></li>
+                <li class="list-group-item"><a [routerLink]="['/shop', '2']" (click)="fetchProductsByCategory('2')">Quần jean</a></li>
+                <!-- <li class="list-group-item"><a [routerLink]="['/shop', '3']" (click)="fetchProductsByCategory('3')"></a></li>
+                <li class="list-group-item"><a [routerLink]="['/shop', '4']" (click)="fetchProductsByCategory('4')"></a></li> -->
+            </ul>
+        </div>
+    </div>
+    
+    <div class="main2" >
+        <div class="sanpham" >
+            <div class="item"  *ngFor="let item of list_filtered" >
+                <div class="sanphamtren">
+                    <img src="../../../assets/img/{{item.img}}" width="100%" alt="">
+                    <div class="product-action">
+                        <a class="btn btn-outline-dark btn-square"(click)="addToCart(item)" href="shop"><i class="fa fa-shopping-cart"></i></a>
+                        <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-heart"></i></a>
+                        <a class="btn btn-outline-dark btn-square" href="/detail/{{item.id}}"><i class="fa fa-search"></i></a>
+                    </div>
+                </div>
+                
+                <div class="info">
+                    <a href="" class="product-name">{{item.name}}</a>
+                    <div class="giatien">{{item.price}}₫</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

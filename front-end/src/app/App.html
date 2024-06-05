@@ -1,0 +1,143 @@
+<header class="px-12 py-4   flex justify-between items-center border">
+  <div class="text-2xl font-bold">
+     <a href="/">QTuan-Shop</a>
+  </div>
+  
+  <nav> 
+    <ul class="flex space-x-6 items-center">
+      <li>
+        <a href="/" class="flex items-center space-x-2 hover:text-yellow-400 transition-colors">
+          <!-- <i class="fa-solid fa-house"></i> -->
+          <span>Trang chủ</span>
+        </a>
+      </li>
+      <li>
+        <a href="/shop" class="hover:text-yellow-400 transition-colors">Cửa hàng</a>
+      </li>
+      <li>
+        <a href="/" class="hover:text-yellow-400 transition-colors">liên hệ</a>
+      </li>
+      <li>
+        <a href="/" class="hover:text-yellow-400 transition-colors">Giới thiệu</a>
+      </li>
+      
+    </ul>
+  </nav>
+  <div class="   flex items-center space-x-2">
+    <a href="#" class="border rounded-full px-4 py-2 flex items-center space-x-2  hover:bg-gray-10 transition-colors">
+      <input type="text" class=" border-none focus:ring-0" placeholder="Search...">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </a>
+    <a href="/cart" class="border rounded-badge px-3 py-3 flex items-center space-x-2 ">
+      <i class="fa-solid fa-cart-shopping"></i>
+    </a>
+    <a href="/login" class="border rounded-badge px-3.5 py-3 flex items-center space-x-2 ">
+      <i class="fa-solid fa-user"></i>
+    </a>
+    
+  </div>
+</header>
+<router-outlet></router-outlet>
+<footer>
+  <div id="tong_footer1">
+      <ul class="vmenu">
+          <div class="vmenu-mini">
+              <div class="headline-footer">
+                  <a href="">GIÀY NIKE</a>
+              </div>
+              <li><a href="#">Jordan 1</a></li>
+              <li><a href="#">Jordan 4</a></li>
+              <li><a href="#">Air Force 1</a></li>
+              <li><a href="#">SB Dunk</a></li>
+              <li><a href="#">Nike Blazer</a></li>
+          </div>
+          <div class="vmenu-mini">
+              <div class="headline-footer">
+                  <a href="">GIÀY KHÁC</a>
+              </div>
+              <li><a href="#">New Balance</a></li>
+              <li><a href="#">MLB</a></li>
+              <li><a href="#">Gucci</a></li>
+              <li><a href="#">Alexander Mcqueen</a></li>
+              <li><a href="#">Dior</a></li>
+              <li><a href="#">Converse</a></li>
+              <li><a href="#">Vans</a></li>
+          </div>
+          <div class="vmenu-mini">
+              <div class="headline-footer">
+                  <a href="">LIÊN HỆ VỚI SHOP</a>
+              </div>
+              <li><a href="#">Hướng dẫn đặt hàng</a></li>
+              <li><a href="#">Điều Khoản và Điều Kiện Thanh Toán</a></li>
+              <li><a href="#">Chính sách giao hàng và nhận hàng</a></li>
+              <li><a href="#">Liên hệ</a></li>
+              <li><a href="#">Đổi Trả – Bảo Hành</a></li>
+              <li><a href="#">Giới thiệu Shopgiayreplica.com</a></li>
+          </div>
+          <div class="banner-footer"><img src="view/image/3_n.jpg" alt=""></div>
+      </ul>
+      <div class="action">
+          <p>THÔNG TIN SHOP</p>
+          <div class="clearfix">
+              <div class="clear">Tầng 4 - 161 Chùa Láng - Đống Đa - Hà Nội (Giờ Làm Việc từ 8am - 10pm)</div>
+              <div class="clear">0964.033.455</div>
+              <div class="clear">08.22222.555</div>
+              <div class="clear">150/37 Đặng Văn Ngữ - Phường 14 - Phú Nhuận - HCM (Giờ Làm Việc từ 8am - 10pm)</div>
+              <div class="clear">0961.055.755</div>
+              <div class="clear">shopgiayreplicahn.com</div>
+          </div>
+          <img src="view/image/dmca_protected_sml_120am.png" alt="">
+      </div>
+      <div class="ftyi"><img src="view/image/ftyi.jpg" alt=""></div>
+  </div>
+</footer>
+<style>
+  footer{
+  min-height: 500px;
+  background-color: #000000;
+  margin: 30px 0px 0px;
+  padding: 60px 0px 0px;
+}
+#tong_footer1{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+ul.vmenu{
+  padding: 0px 15px;
+  flex-wrap: wrap;
+  display: flex;
+
+}
+ul.vmenu .headline-footer a{
+  color: aliceblue;
+  font: 16pt;
+  margin: 0px 0px 20px;
+  padding: 0px 0px 10px;
+}
+ul.vmenu .vmenu-mini{
+  justify-content: space-between;
+  padding: 0px 15px;
+}
+ul.vmenu .vmenu-mini li {
+  margin: 10px 0px;
+
+}
+.vmenu .headline-footer a{
+  text-decoration: none;
+  
+}
+ul.vmenu li a{
+  text-decoration: none;
+  margin: 10px 0px;
+  font: 14pt; 
+  color: #555555;
+}
+.banner-footer img{
+  margin-right: 0px;
+}
+.action{
+  color: aliceblue;
+  font: 16px;
+  padding: 20px 0px 0px;
+}
+</style>

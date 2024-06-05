@@ -1,0 +1,36 @@
+ 
+<div class="home" id="show-detail"  *ngIf="sanpham">
+    <div class="home1">
+        <div class="main">
+            <img src="../../../assets/img/{{sanpham.img}}" alt="">
+        </div>
+        <div class="list-image">
+            <img src="/img/aokhoac1.webp" alt="">
+            <img src="/img/aokhoac1.webp" alt="">
+            <img src="/img/aokhoac1.webp" alt="">
+            <img src="/img/aokhoac1.webp" alt="">
+        </div>
+    </div>
+    <div class="home2" *ngIf="sanpham">
+        <h1>{{sanpham.name}}</h1>   
+        <div class="giatien">{{sanpham.price}} ₫</div>
+        <div class="thanhtoan">
+            <a href="cart" style=" margin: 10px;" class="them-vaogiohang" (click)="addToCart(sanpham)">THÊM VÀO GIỎ HÀNG</a>
+        </div>
+        <div class="soidongdieptet">
+           
+            <li>Cam kết chất lượng như hình ảnh, video đăng tải trên Web</li>
+            <li>Double Box kèm chống sốc khi giao hàng</li>
+            <li>Giao hàng nhanh 60 phút trong nội thành Hà Nội và tp Hcm</li>
+            <li>Nhận hàng và kiểm tra trước khi thanh toán.</li>
+            <li>Hỗ Trợ đổi trả size linh hoạt</li>
+        </div>
+        <div class="mamathang">
+            <p>
+                <strong>Mã:</strong>NAJ142
+            </p>
+            <p><strong>Thương hiệu:<a href="#">hahahah</a></strong></p>
+        </div>
+    </div>
+
+</div>

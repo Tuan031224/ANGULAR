@@ -1,0 +1,111 @@
+<section class="home">
+    <div id="tong">
+        <div class="banner"><img src="../../../assets/img/web__1__f12b0d1898f4412399e7230bcd33f55e.webp" alt=""></div>
+        <div class="headline">
+            <h3 class="mt-10 mb-5 font-bold" >SẢN PHẨM MỚI</h3>
+        </div>
+        <div class="sanpham" id="loadsp">
+            
+      
+            <div class="item" *ngFor="let item of list_new_pr">
+                <div class="sanphamtren">
+                    <img src="../../../assets/img/{{item.img}}" width="100%" alt="">
+                    <div class="product-action">
+                        <a class="btn btn-outline-dark btn-square" href="#" (click)="addToCart(item)"><i class="fa fa-shopping-cart"></i></a>
+                        <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-heart"></i></a>
+                        <a class="btn btn-outline-dark btn-square" href="/detail/{{item.id}}"><i class="fa fa-search"></i></a>
+                    </div>
+                </div>
+                
+                <div class="info">
+                    <a href="" class="product-name">{{item.name}}</a>
+                    <div class="giatien">{{item.price}}₫</div>  
+                </div>
+            </div>
+
+        
+        </div>
+        <h3 class="mt-10 mb-5 font-bold">SẢN PHẨM BÁN CHẠY</h3>
+        <div class="sanpham" id="loadsp">
+            
+           
+                <div class="item" *ngFor="let item of list_pr">
+                    <div class="sanphamtren">
+                        <img src="../../../assets/img/{{item.img}}" width="100%" alt="">
+                        <div class="product-action">
+                            <a class="btn btn-outline-dark btn-square" href="#"><i class="fa fa-shopping-cart"></i></a>
+                            <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-heart"></i></a>
+                            <a class="btn btn-outline-dark btn-square" href="/detail/{{item.id}}"><i class="fa fa-search"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="info">
+                        <a href="" class="product-name">{{item.name}}</a>
+                        <div class="giatien">{{item.price}}₫</div>
+                    </div>
+                </div>
+    
+            
+                
+                
+            </div>
+        <div class="headline-kienthuc">
+            <h3>KIẾN THỨC & MẸO VẶT</h3>
+        </div>
+        <ul class="kien-thuc">
+            <li>
+                <div class="kien-thuc-item">
+                    <div class="kien-thuc-top">
+                        <a href="" class="kien-thuc-thumb">
+                            <img src="../../../assets/img/tintuc4.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="kien-thuc-info">
+                        <a href="" class="kien-thuc-name">Phối đồ mọi phong cách với mẫu giày nike air force 1 white trắng</a>
+                        <div class="kien-thuc-mota">Không phải ngẫu nhiên mà mẫu giày nike air force 1 trắng full white được gọi là "đôi giày..."</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="kien-thuc-item">
+                    <div class="kien-thuc-top">
+                        <a href="" class="kien-thuc-thumb">
+                            <img src="../../../assets/img/tintuc2.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="kien-thuc-info">
+                        <a href="" class="kien-thuc-name">Phối đồ mọi phong cách với mẫu giày nike air force 1 white trắng</a>
+                        <div class="kien-thuc-mota">Không phải ngẫu nhiên mà mẫu giày nike air force 1 trắng full white được gọi là "đôi giày..."</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="kien-thuc-item">
+                    <div class="kien-thuc-top">
+                        <a href="" class="kien-thuc-thumb">
+                            <img src="../../../assets/img/tintuc3.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="kien-thuc-info">
+                        <a href="" class="kien-thuc-name">Phối đồ mọi phong cách với mẫu giày nike air force 1 white trắng</a>
+                        <div class="kien-thuc-mota">Không phải ngẫu nhiên mà mẫu giày nike air force 1 trắng full white được gọi là "đôi giày..."</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="kien-thuc-item">
+                    <div class="kien-thuc-top">
+                        <a href="" class="kien-thuc-thumb">
+                            <img src="../../../assets/img/tintuc2.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="kien-thuc-info">
+                        <a href="" class="kien-thuc-name">Phối đồ mọi phong cách với mẫu giày nike air force 1 white trắng</a>
+                        <div class="kien-thuc-mota">Không phải ngẫu nhiên mà mẫu giày nike air force 1 trắng full white được gọi là "đôi giày..."</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+

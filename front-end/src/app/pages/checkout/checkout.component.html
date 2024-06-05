@@ -1,0 +1,103 @@
+<div id="wrapper">
+    <main class="main">
+         <div class="page_checkout">
+             <form class="form_checkout" method="post" id="checkoutform">
+                 <div class="line"></div>
+                 <div class="checkout">
+                     <div class="info_checkout">
+                         <div class="info">
+                             <h3 class="checkout-title">Thông tin thanh toán</h3>
+                             <p id="name">
+                                 <label class="label" for="name">Họ và tên *</label> <br>
+                                 <input class="name_input" type="text" name="name" placeholder="Nhập đầy đủ họ và tên của bạn">
+                                 <div class="error-message" id="name-error"></div>
+                             
+                             <p id="address">
+                                 <label class="label" for="address">Địa chỉ *</label> <br>
+                                 <input class="address_input" type="text" name="address" placeholder="Ví dụ: Số xx Ngõ xx Phú Kiều, Bắc Từ Liêm, Hà Nội">
+                                 <div class="error-message" id="address-error"></div>
+                             
+                             <p id="tel">
+                                 <label class="label" for="tel">Số điện thoại *</label> <br>
+                                 <input class="tel_input" type="text" name="tel">
+                                 <div class="error-message" id="tel-error"></div>
+                             
+                             <p id="email">
+                                 <label class="label" for="email">Địa chỉ email *</label> <br>
+                                 <input class="email_input" type="text" name="email">
+                                 <div class="error-message" id="email-error"></div>
+                             
+                         </div>
+                         <div class="info_additional">
+                             <h3 class="checkout-title">Thông tin bổ sung</h3>
+                             <p id="note">
+                                 <label class="label" for="note">Ghi chú đơn hàng</label> <br>
+                                 <textarea name="" id="" cols="30" rows="10" placeholder="Ghi chú về đơn hàng, ví dụ: thời gian hay chỉ dẫn địa điểm giao hàng chi tiết hơn."></textarea>
+                             </p>
+                         </div>
+                     </div>
+                     <div class="bill_chekckout">
+                         <div class="bill-order_checkout">
+                             <h3 class="order_title">Đơn hàng của bạn</h3>
+                             <div class="order_review">
+                                 <table class="shop_table">
+                                     <thead>
+                                         <tr>
+                                             <th class="product-name">Sản phẩm</th>
+                                             <th></th>
+                                             <th class="product-total">Tạm tính</th>
+                                         </tr>
+                                     </thead>
+                                     <tbody id="cart">
+                                         <tr class="cart_item" *ngFor="let item of cart; let i = index">
+                                             <td style="width: 50px;"><img src="../../../assets/img/{{item.img}}"></td>
+                                             <td>
+                                                {{item.name}}
+                                                 <strong class="product-quantity">×{{item.count}}</strong>
+                                             </td>
+                                             <td><strong class="product-price">{{item.price | number}}đ</strong></td>
+                                         </tr>
+                                         
+                                     </tbody>
+                                     <tfoot>
+                                         
+                                         <tr class="order-total" >
+                                             <th>Tổng</th>
+                                             <td ><strong class="product-price" id="tongtien">{{ getTotalCost() | number }}đ</strong></td>
+                                         </tr>
+                                     </tfoot>
+                                 </table>
+                                 <div id="payment" class="checkout-payment">
+                                     <ul class="payment_methods">
+                                         <li class="payment_methods_bacs">
+                                             <input id="payment_method_bacs" type="radio" class="input-radio" name="payment_method" value="bacs" checked="checked" data-order_button_text="">
+                                             <label class="label" for="payment_method_bacs">Chuyển khoản ngân hàng</label>
+                                             <div class="payment_box payment_method_bacs">
+                                                 <p>Thực hiện thanh toán vào ngay tài khoản ngân hàng của chúng tôi. Vui lòng sử dụng Mã đơn hàng của bạn trong phần Nội dung thanh toán. Đơn hàng sẽ đươc giao sau khi tiền đã chuyển.</p>
+                                             </div>
+                                         </li>
+                                         <li class="payment_methods_cod">
+                                             <input id="payment_method_cod" type="radio" class="input-radio" name="payment_method" value="cod" data-order_button_text="">
+                                             <label class="label" for="payment_method_cod">Trả tiền mặt khi nhận hàng</label>
+                                             <div class="payment_box payment_method_cod">
+                                                 <p>Trả tiền mặt khi giao hàng</p>
+                                             </div>
+                                         </li>
+                                     </ul>
+                                     <div class="place-order">
+                                         <button type="submit" class="button" name="checkout_place_order" id="place_order" value="Đặt hàng" data-value="Đặt hàng">Đặt hàng</button>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="privacy-policy-text">
+                                 <p>Thông tin cá nhân của bạn sẽ được sử dụng để xử lý đơn hàng, tăng trải nghiệm sử dụng website, và cho các mục đích cụ thể khác đã được mô tả trong 
+                                 <a href="#" class="privacy-policy-link" target="_blank">chính sách riêng tư</a>
+                                 </p>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </form>
+         </div>
+    </main>
+ </div>
